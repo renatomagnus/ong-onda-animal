@@ -1,0 +1,132 @@
+$primary: #53bcb8;
+$secondary: #fff;
+$transition: height 0.4s ease-out;
+
+@mixin flexCenter($gap) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+
+.header__container {
+  .header__content {
+    @include flexCenter(60px);
+    padding: 20px 0;
+
+    .header__horizontal--menu ul {
+      @include flexCenter(30px);
+      font-size: 18px;
+
+      li {
+        position: relative;
+        cursor: pointer;
+
+        .header__submenu {
+          position: absolute;
+          top: 100%;
+          left: -10px;
+          display: none;
+          flex-direction: column;
+          gap: 0;
+          align-items: flex-start;
+          width: auto;
+          padding-top: 10px;
+          background-color: $secondary;
+
+          li {
+            padding: 10px;
+            cursor: pointer;
+            text-align: left;
+            width: 200px;
+
+            &:hover {
+              background-color: $primary;
+              color: $secondary;
+            }
+          }
+        }
+
+        &:hover {
+          color: $primary;
+          .header__submenu {
+            display: flex;
+          }
+        }
+      }
+    }
+
+    .header__logo {
+      max-width: 200px;
+    }
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__vertical--menu {
+    height: 0;
+    overflow: hidden;
+    transition: $transition;
+
+    ul li {
+      padding: 10px 20px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $primary;
+        color: $secondary;
+      }
+    }
+    .header__vertical--images {
+      padding: 15px;
+
+      .header__vertical--image {
+        width: 40px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .header__menu--open {
+    transition: $transition;
+  }
+
+  @media (max-width: 1200px) {
+    .header__content {
+      justify-content: space-between;
+      padding: 20px 30px 20px 9px;
+
+      nav {
+        display: none;
+      }
+    }
+
+    .header__menu {
+      display: block;
+      width: 40px;
+      cursor: pointer;
+    }
+    .header__vertical--menu {
+      ul li {
+        padding: 5px 20px;
+      }
+    }
+    .header__menu--open {
+      height: 480px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .header__content {
+      .header__logo {
+        max-width: 160px;
+      }
+    }
+
+    .header__menu {
+      width: 30px;
+    }
+  }
+}

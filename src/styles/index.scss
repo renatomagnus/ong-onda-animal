@@ -1,4 +1,38 @@
-$primary: blue;
-p{
-  background-color: $primary;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
+@import '../components/header/styles.css';
+
+
+//Colors
+$primary: #53bcb8;
+$secondary: #fff;
+$tertiary: #6e6e6e;
+
+//Resets
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Open Sans', sans-serif;
+  color: $tertiary;
 }
+
+img{
+  max-width: 100%; 
+  height: auto; 
+  vertical-align: middle; 
+  font-style: italic;
+}
+
+
+
+
+
+ .display--none{
+  display: none;
+ }
+ .rotate90{
+  transform: rotate(90deg);
+  display: inline-block;
+ }
