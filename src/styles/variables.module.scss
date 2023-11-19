@@ -1,0 +1,12 @@
+@import '_mixins.scss';
+$color-primary: blue;
+
+.title{
+  color: $color-primary;
+}
+
+@include mobile() {
+  .title{
+    color: green;
+  }
+}
