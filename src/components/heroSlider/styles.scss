@@ -1,0 +1,43 @@
+.hero-slider {
+  .slick-slide {
+    div {
+      background-size: cover;
+      height: 500px;
+      position: relative;
+
+      .hero-content {
+        position: absolute;
+        right: 20%;
+        top: 40%;
+        text-align: end;
+        text-wrap: balance;
+        max-width: 600px;
+        h2 {
+          color: inherit;
+          font-size: 48px;
+        }
+        p {
+          color: inherit;
+          font-size: 24px;
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+        }
+        .hero-button1,
+        .hero-button2 {
+          background-color: transparent;
+          color: #53bcb8;
+          border: 2px solid #53bcb8;
+          border-radius: 4px;
+          padding: 0.6em 1.5em;
+          margin-top: 20px;
+          font-size: 16px;
+          font-weight: 700;
+          cursor: pointer;
+        }
+        .hero-button2 {
+          border: 2px solid #fff;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
