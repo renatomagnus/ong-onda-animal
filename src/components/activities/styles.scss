@@ -13,13 +13,13 @@
       height: 200px;
       text-wrap: balance;
       padding: 20px;
-      transition: transform 0.4s ease-out;
+      transition: transform $transition;
       cursor: pointer;
       gap: 20px;
 
       &:hover {
         transform: scale(1.2);
-        transition: transform 0.4s ease-out;
+        transition: transform $transition;
       }
       .activity__image--container {
         height: 70px;

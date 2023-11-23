@@ -1,3 +1,5 @@
+@import '../../styles/_variables.scss';
+
 .hero-slider {
   .slick-slide {
     div {
@@ -24,8 +26,8 @@
         .hero-button1,
         .hero-button2 {
           background-color: transparent;
-          color: #53bcb8;
-          border: 2px solid #53bcb8;
+          color: $primary;
+          border: 2px solid $primary;
           border-radius: 4px;
           padding: 0.6em 1.5em;
           margin-top: 20px;
@@ -34,8 +36,8 @@
           cursor: pointer;
         }
         .hero-button2 {
-          border: 2px solid #fff;
-          color: #fff;
+          border: 2px solid $secondary;
+          color: $secondary;
         }
       }
     }

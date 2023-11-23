@@ -1,9 +1,0 @@
-.title {
-  color: blue;
-}
-
-@media (max-width: 600px) {
-  .title {
-    color: green;
-  }
-}/*# sourceMappingURL=variables.module.css.map */
