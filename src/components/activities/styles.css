@@ -1,0 +1,44 @@
+.activities .activity__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.activities .activity__container .activity {
+  text-align: center;
+  max-width: 260px;
+  height: 200px;
+  text-wrap: balance;
+  padding: 20px;
+  transition: transform 0.4s ease-out;
+  cursor: pointer;
+  gap: 20px;
+}
+.activities .activity__container .activity:hover {
+  transform: scale(1.2);
+  transition: transform 0.4s ease-out;
+}
+.activities .activity__container .activity .activity__image--container {
+  height: 70px;
+}
+.activities .activity__container .activity .activity__image--container .activity__image {
+  max-width: 60px;
+  max-height: 50px;
+}
+@media (max-width: 1220px) {
+  .activities .activity__container {
+    max-width: 640px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .activities .activity__container {
+    max-width: 340px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}/*# sourceMappingURL=styles.css.map */

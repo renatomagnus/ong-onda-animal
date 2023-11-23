@@ -73,7 +73,7 @@
 .header__container .header__menu--open {
   transition: height 0.4s ease-out;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1220px) {
   .header__container .header__content {
     justify-content: space-between;
     padding: 20px 30px 20px 9px;
