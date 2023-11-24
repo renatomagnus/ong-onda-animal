@@ -1,0 +1,64 @@
+.already__done {
+  margin: 60px auto;
+}
+.already__done .already__container .already__done--top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.already__done .already__container .already__done--top::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #53bcb8;
+  margin: 30px auto 0;
+}
+.already__done .already__container .already__done--top .already__done--title {
+  color: #53bcb8;
+  margin-bottom: 10px;
+}
+.already__done .already__container .already__done--top .already__done--text {
+  text-align: center;
+  text-wrap: balance;
+  padding: 0 20px;
+}
+.already__done .already__container .already__done--bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+@media (max-width: 1220px) {
+  .already__done .already__container .already__done--bottom {
+    max-width: 640px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .already__done .already__container .already__done--bottom {
+    max-width: 340px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+.already__done .already__container .already__done--bottom .already__done--card {
+  height: 160px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+.already__done .already__container .already__done--bottom .already__done--card .already__done--number {
+  color: #53bcb8;
+  font-size: 70px;
+  font-weight: 300;
+  font-style: italic;
+}/*# sourceMappingURL=styles.css.map */

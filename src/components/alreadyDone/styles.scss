@@ -1,0 +1,45 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.already__done {
+  margin: 60px auto;
+  .already__container {
+    .already__done--top {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @include borderBottom();
+
+      .already__done--title {
+        color: $primary;
+        margin-bottom: 10px;
+      }
+      .already__done--text {
+        text-align: center;
+        text-wrap: balance;
+        padding: 0 20px;
+      }
+    }
+    .already__done--bottom {
+      @include flexSection();
+
+      .already__done--card {
+        height: 160px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+
+        .already__done--number {
+          color: $primary;
+          font-size: 70px;
+          font-weight: 300;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}

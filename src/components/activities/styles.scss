@@ -1,11 +1,6 @@
 .activities {
   .activity__container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexSection();
 
     .activity {
       text-align: center;
@@ -28,23 +23,6 @@
           max-height: 50px;
         }
       }
-    }
-  }
-
-  @media (max-width: 1220px) {
-    .activity__container {
-      max-width: 640px;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-  }
-  @media (max-width: 700px) {
-    .activity__container {
-      max-width: 340px;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-
     }
   }
 }

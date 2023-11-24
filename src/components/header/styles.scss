@@ -5,11 +5,11 @@
 
 .header__container {
   .header__content {
-    @include flexCenter(60px);
+    @include flexHeader(60px);
     padding: 20px 0;
 
     .header__horizontal--menu ul {
-      @include flexCenter(30px);
+      @include flexHeader(30px);
       font-size: 18px;
 
       li {

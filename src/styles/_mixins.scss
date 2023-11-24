@@ -1,6 +1,37 @@
-@mixin flexCenter($gap) {
+@mixin flexHeader($gap) {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: $gap;
+}
+
+@mixin flexSection() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+  @media (max-width: 1220px) {
+    max-width: 640px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  @media (max-width: 700px) {
+    max-width: 340px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@mixin borderBottom() {
+  &::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: $primary;
+    margin: 30px auto 0;
+  }
 }
