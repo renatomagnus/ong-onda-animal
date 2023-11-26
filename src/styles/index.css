@@ -3,6 +3,7 @@
 @import '../components/heroSlider/styles.css';
 @import '../components/activities/styles.css';
 @import '../components/alreadyDone/styles.css';
+@import '../components/footer/styles.css';
 * {
   margin: 0;
   padding: 0;

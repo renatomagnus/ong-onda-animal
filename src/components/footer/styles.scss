@@ -1,0 +1,51 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+#footer {
+  background-color: $primary;
+
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+
+    .footer__content--right {
+      img {
+        max-width: 160px;
+      }
+    }
+    .footer__content--left {
+      img {
+        max-height: 40px;
+        margin-left: 10px;
+      }
+    }
+  }
+  .footer__rights {
+    padding-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    p {
+      color: white;
+      font-size: 18px;
+    }
+  }
+  @media (max-width: 1220px) {
+    .footer__container {
+      max-width: 620px;
+    }
+  }
+  @media (max-width: 400px) {
+    .footer__container {
+      .footer__content--right {
+        img {
+          max-width: 140px;
+        }
+      }
+    }
+  }
+}

@@ -4,12 +4,10 @@
 @import '../components/heroSlider/styles.css';
 @import '../components/activities/styles.css';
 @import '../components/alreadyDone/styles.css';
-
-
-
+@import '../components/footer/styles.css';
 
 //Resets
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -19,20 +17,20 @@
   color: $tertiary;
 }
 
-img{
-  max-width: 100%; 
-  height: auto; 
-  vertical-align: middle; 
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
   font-style: italic;
 }
 
- .display--none{
+.display--none {
   display: none;
- }
- .rotate90{
+}
+.rotate90 {
   transform: rotate(90deg);
   display: inline-block;
- }
- .uppercase{
+}
+.uppercase {
   text-transform: uppercase;
- }
+}
