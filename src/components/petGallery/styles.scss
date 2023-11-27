@@ -1,0 +1,49 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.pet-gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+  .pet-gallery__filters {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100px;
+    select {
+      border: none;
+    }
+  }
+  .pet-gallery__animals {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+    img {
+      width: 280px;
+    }
+    div p {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .pet-gallery__animals--name {
+      color: $primary;
+      font-weight: 700;
+    }
+    .pet-gallery__animals--description {
+      font-style: italic;
+    }
+  }
+  @media (max-width: 1220px) {
+    max-width: 640px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  @media (max-width: 700px) {
+    max-width: 340px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
