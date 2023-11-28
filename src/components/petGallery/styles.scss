@@ -5,6 +5,19 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px 0;
+  .pet-gallery__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-wrap:balance;
+    text-align: center;
+    @include borderBottom();
+    .pet-gallery__title {
+      color: $primary;
+      margin-bottom: 10px;
+    }
+  }
   .pet-gallery__filters {
     margin: 0 auto;
     display: flex;
@@ -14,14 +27,16 @@
     height: 100px;
     select {
       border: none;
+      cursor: pointer;
     }
   }
   .pet-gallery__animals {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 16px;
+    margin: 0 10px;
     img {
-      width: 280px;
+      width: 288px;
     }
     div p {
       text-align: center;
@@ -39,11 +54,38 @@
     max-width: 640px;
     flex-wrap: wrap;
     gap: 20px;
+    .pet-gallery__animals {
+      img {
+        width: 310px;
+      }
+    }
   }
   @media (max-width: 700px) {
     max-width: 340px;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    .pet-gallery__animals {
+      img {
+        width: 340px;
+      }
+    }
+  }
+  @media (max-width: 380px) {
+    max-width: 300px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    .pet-gallery__filters {
+      gap: 10px;
+      width: 200px;
+      flex-wrap: wrap;
+      margin: 10px auto;
+    }
+    .pet-gallery__animals {
+      img {
+        width: 100%;
+      }
+    }
   }
 }

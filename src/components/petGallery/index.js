@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react';
+import AdoptionModal from '../modal';
+import Modal from 'react-modal';
 
 const PetGallery = () => {
   const [pets, setPets] = useState([]);
+  const [selectedPet, setSelectedPet] = useState(null);
   const [selectedFilters, setSelectedFilters] = useState({
     type: 'All',
     size: 'All',
@@ -134,8 +137,20 @@ const PetGallery = () => {
     }));
   };
 
+  const openModal = (pet) => {
+    setSelectedPet(pet);
+  };
+
+  const closeModal = () => {
+    setSelectedPet(null);
+  };
+
   return (
     <section className="pet-gallery">
+      <div className="pet-gallery__top">
+        <h2 className="uppercase pet-gallery__title">- adoção -</h2>
+        <p>Alguns de nossos amiguinhos à procura de um novo lar</p>
+      </div>
       <div className="pet-gallery__filters">
         <select onChange={e => handleFilterChange('type', e.target.value)}>
           <option value="All">Espécie</option>
@@ -164,7 +179,7 @@ const PetGallery = () => {
       </div>
       <div className="pet-gallery__animals">
         {pets.map((pet, index) => (
-          <div key={index}>
+          <div className="pet-gallery__animal" key={index} onClick={() => openModal(pet)}>
             <img src={pet.image} alt={`Pet ${index}`} />
             <p className='pet-gallery__animals--name'>{pet.name}</p>
             <p>{pet.gender} / {pet.size} / {pet.age}</p>
@@ -172,6 +187,28 @@ const PetGallery = () => {
           </div>
         ))}
       </div>
+      <Modal
+        isOpen={!!selectedPet}
+        onRequestClose={closeModal}
+        contentLabel="Pet Modal"
+      >
+        {selectedPet && (
+          <div>
+            <img src={selectedPet.image} alt={selectedPet.name} />
+            <p>{selectedPet.name}</p>
+            <p>
+              {selectedPet.gender} / {selectedPet.size} / {selectedPet.age}
+            </p>
+            <p>{selectedPet.description}</p>
+            <AdoptionModal
+              isOpen={!!selectedPet}
+              onRequestClose={closeModal}
+              petName={selectedPet.name}
+              petImage={selectedPet.image}
+            />
+          </div>
+        )}
+      </Modal>
     </section>
   );
 };
