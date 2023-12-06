@@ -148,7 +148,7 @@ const PetGallery = () => {
   return (
     <section className="pet-gallery">
       <div className="pet-gallery__top">
-        <h2 className="uppercase pet-gallery__title">- adoção -</h2>
+        <h2>- adoção -</h2>
         <p>Alguns de nossos amiguinhos à procura de um novo lar</p>
       </div>
       <div className="pet-gallery__filters">

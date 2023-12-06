@@ -6,17 +6,7 @@
   margin: 0 auto;
   padding: 20px 0;
   .pet-gallery__top {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-wrap:balance;
-    text-align: center;
-    @include borderBottom();
-    .pet-gallery__title {
-      color: $primary;
-      margin-bottom: 10px;
-    }
+    @include sectionTitle
   }
   .pet-gallery__filters {
     margin: 0 auto;

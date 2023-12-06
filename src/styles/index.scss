@@ -7,6 +7,7 @@
 @import '../components/footer/styles.css';
 @import '../components/petGallery/styles.css';
 @import '../components/modal/styles.css';
+@import '../pages/quem-somos/styles.css';
 
 //Resets
 * {
@@ -25,7 +26,11 @@ img {
   vertical-align: middle;
   font-style: italic;
 }
-
+#page-wrapper{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 .display--none {
   display: none;
 }

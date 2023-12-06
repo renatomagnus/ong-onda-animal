@@ -4,12 +4,9 @@
   padding: 20px 0;
 }
 .pet-gallery .pet-gallery__top {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-wrap: balance;
   text-align: center;
+  margin-bottom: 40px;
 }
 .pet-gallery .pet-gallery__top::after {
   content: "";
@@ -19,9 +16,9 @@
   background-color: #53bcb8;
   margin: 30px auto 0;
 }
-.pet-gallery .pet-gallery__top .pet-gallery__title {
+.pet-gallery .pet-gallery__top h1, .pet-gallery .pet-gallery__top h2, .pet-gallery .pet-gallery__top h3 {
   color: #53bcb8;
-  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 .pet-gallery .pet-gallery__filters {
   margin: 0 auto;

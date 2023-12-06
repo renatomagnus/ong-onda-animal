@@ -2,6 +2,7 @@
 @import '../../styles/mixins';
 #footer {
   background-color: $primary;
+  margin-top: auto;
 
   .footer__container {
     display: flex;

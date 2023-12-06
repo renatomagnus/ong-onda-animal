@@ -1,0 +1,16 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.quem-somos{
+  margin: 0 auto;
+  padding: 0 20px;
+  .section-title{
+    @include sectionTitle()
+  }
+  h3{
+    margin: 50px 0 30px;
+  }
+  ul li {
+    margin-bottom: 10px;
+  }
+}
