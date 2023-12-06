@@ -1,0 +1,38 @@
+.clinic {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.clinic .section-title {
+  text-wrap: balance;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.clinic .section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #53bcb8;
+  margin: 30px auto 0;
+}
+.clinic .section-title h1, .clinic .section-title h2, .clinic .section-title h3 {
+  color: #53bcb8;
+  text-transform: uppercase;
+}
+.clinic h3 {
+  margin-bottom: 20px;
+}
+.clinic ul li {
+  margin-left: 20px;
+}
+.clinic .clinic-infos {
+  margin-top: 40px;
+}
+.clinic .clinic-infos p {
+  margin: 10px 0;
+}
+.clinic a {
+  color: #53bcb8;
+  margin-bottom: 10px;
+}/*# sourceMappingURL=styles.css.map */
