@@ -6,7 +6,7 @@
 .clinic .section-title {
   text-wrap: balance;
   text-align: center;
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 .clinic .section-title::after {
   content: "";

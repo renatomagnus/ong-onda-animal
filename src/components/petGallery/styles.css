@@ -6,7 +6,7 @@
 .pet-gallery .pet-gallery__top {
   text-wrap: balance;
   text-align: center;
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 .pet-gallery .pet-gallery__top::after {
   content: "";

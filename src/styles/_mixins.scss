@@ -28,7 +28,7 @@
 @mixin sectionTitle() {
   text-wrap:balance;
   text-align: center;
-  margin-bottom: 40px;
+  margin: 40px 0;
   @include borderBottom();
   h1, h2, h3{
     color: $primary;
